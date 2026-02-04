@@ -4,13 +4,17 @@
   /* --background: #ffffff; */
   --foreground: #171717;
 }
-
+*{
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
 @theme inline {
   /* --color-background: var(--background); */
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
+  --font-signika: var(--font-signika);
+} 
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -20,9 +24,11 @@
 }
 
 body {
-  /* background: var(--background); */
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+
+  background: url("/bg-main-hero.png") no-repeat;
+  background-size: cover;
+  background-color: lab(97.1626% 2.99937 -4.13398);
+  font-family: var(--font-signika), Arial, Helvetica, sans-serif;
 }
 
 .navbar {
@@ -39,8 +45,8 @@ body {
 .nav-center {
   display: flex;
   align-items: center;
-  gap: 50px;              
-  padding: 20px 60px;     
+  gap: 50px;
+  padding: 20px 60px;
 }
 .logo {
   position: relative;
@@ -55,33 +61,33 @@ body {
   padding: 20px 10px;
   background-color: white;
   border: 2px solid black;
-  border-radius : 20px;
-  font-family: cursive, Arial, Helvetica, sans-serif;
+  border-radius: 20px;
+  /* font-family: cursive, Arial, Helvetica, sans-serif; */
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease;
   width: 120px;
   height: 60px;
-  font-size : 22px;
+  font-size: 22px;
   /* padding-bottom:-8px; */
-  padding-top : 10px;
+  padding-top: 10px;
 }
 
 .nav-button:hover {
   background-color: black;
   color: white;
 }
-.welcome-main{
+.welcome-main {
   font-size: 80px;
   font-weight: bold;
   /* position: relative;
   top: 200px;
   left: 100px; */
-  font-family: cursive, Arial, Helvetica, sans-serif;
-  text-align : center;
-  color : black;
+  /* font-family: cursive, Arial, Helvetica, sans-serif; */
+  text-align: center;
+  color: black;
   display: flex;
-  justify-content: center;  
+  justify-content: center;
   align-items: center;
   height: 80vh;
 }
