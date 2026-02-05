@@ -33,10 +33,10 @@ export default function HomePage() {
     }, 3000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [fonts.length]);
 
   return (
-    <main style={{ overflowX: 'hidden' }}>
+    <>
       <style jsx global>{`
         @import url('https://fonts.googleapis.com/css2?family=Signika:wght@700&family=Roboto:wght@700&family=Montserrat:wght@700&family=Poppins:wght@700&family=Inter:wght@700&family=Raleway:wght@700&family=Bebas+Neue&family=Oswald:wght@700&family=Playfair+Display:wght@700&family=Space+Grotesk:wght@700&display=swap');
 
@@ -137,7 +137,6 @@ export default function HomePage() {
         .glitch-wrapper {
           position: relative;
           display: inline-block;
-          // line-height: 1.2;
         }
 
         .glitch-active {
@@ -153,7 +152,6 @@ export default function HomePage() {
           width: 100%;
           height: 100%;
           background: transparent;
-          // white-space: pre-line;
         }
 
         .glitch-active::before {
@@ -180,16 +178,18 @@ export default function HomePage() {
         }
       `}</style>
 
-      <section className="hero-secion">
-        <div
-          className={`welcome-main font-transition glitch-wrapper ${isGlitching ? "glitch-active" : ""}`}
-          style={{ fontFamily: fonts[currentFont] }}
-          data-text={`Thoughts\nNot Profile`}
-        >
-          Thoughts <br /> Not Profile
-        </div>
-      </section>
-    </main>
+      <main style={{ overflowX: 'hidden' }}>
+        <section className="hero-secion">
+          <div
+            className={`welcome-main font-transition glitch-wrapper ${isGlitching ? "glitch-active" : ""}`}
+            style={{ fontFamily: fonts[currentFont] }}
+            data-text={`Thoughts\nNot Profile`}
+          >
+            Thoughts <br /> Not Profile
+          </div>
+        </section>
+      </main>
+    </>
   );
 }
 
