@@ -58,7 +58,7 @@ export default function CreatePostPage() {
                             </div>
                         )}
 
-                        <div className="bg-gradient-to-br from-purple-50 to-blue-50 p-6 rounded-2xl border-3 border-purple-300 mb-6">
+                        <div className="bg-linear-to-br from-purple-50 to-blue-50 p-6 rounded-2xl border-3 border-purple-300 mb-6">
                             <p className="text-sm text-gray-700 mb-2">
                                 <span className="font-bold">💡 Tips for great posts:</span>
                             </p>
