@@ -182,10 +182,10 @@ export default function HomePage() {
         <section className="hero-secion">
           <div
             className={`welcome-main font-transition glitch-wrapper ${isGlitching ? "glitch-active" : ""}`}
-            style={{ fontFamily: fonts[currentFont] }}
-            data-text={`Thoughts\nNot Profile`}
+            style={{ fontFamily: fonts[currentFont], fontSize: "7rem" }}
+            data-text={`Hidden\nYet Heard`}
           >
-            Thoughts <br /> Not Profile
+            Hidden <br /> Yet Heard
           </div>
         </section>
       </main>
